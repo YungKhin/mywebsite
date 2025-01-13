@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Training Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section, .form-section, .donation-section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        .donation-button {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .donation-button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pet Training Hub</h1>
+        <p>Train your pets with ease and share your experience with us!</p>
+    </header>
+
+    <nav>
+        <a href="#videos">How-To Videos</a>
+        <a href="#form">Contact Us</a>
+        <a href="#donation">Donate</a>
+    </nav>
+
+    <div class="container">
+        <section id="videos" class="video-section">
+            <h2>How-To Videos</h2>
+            <p>Explore our collection of training videos to help your pets learn new skills:</p>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Training Video"></iframe>
+            <iframe src="https://www.youtube.com/embed/C0DPdy98e4c" title="Training Video"></iframe>
+        </section>
+
+        <section id="form" class="form-section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="donation" class="donation-section">
+            <h2>Support Us</h2>
+            <p>Your donations help us create more resources for training pets. Click below to donate:</p>
+            <a href="#" class="donation-button">Donate Now</a>
+        </section>
+    </div>
+
+</body>
+</html>
