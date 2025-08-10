@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BizFinder • Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <a href="./index.html">BizFinder</a>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./listings.html">Listings</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="results-title">
+      <h1 id="results-title">Results</h1>
+      <form id="search-form" class="search-bar" role="search">
+        <input class="input" type="text" name="q" placeholder="Search businesses" aria-label="Search" />
+        <div style="display:flex; gap: 10px;">
+          <select id="category-select" class="select" name="category" aria-label="Category"></select>
+          <button class="button" type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="results"></div>
+
+    <footer class="footer">Made with ♥ for simple discovery.</footer>
+  </main>
+
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script>initSearchPage();</script>
+</body>
+</html>
